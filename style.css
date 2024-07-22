@@ -1,0 +1,325 @@
+:root {
+    --verde-principal:#006f4e;
+    --verde-fonte:#006F4D;
+    --cinza-fonte:#343a40;
+    --laranja-fonte:#ff8931;
+}
+
+body {
+    background-image: url(./img/Back\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--verde-principal);
+}
+
+.cabecalho__menu {
+    display: flex;
+    background-color: var(--verde-principal);
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cabecalho__menu__link {
+    color: var(--laranja-fonte);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.apresentacao__conteudo {
+    padding: 10% 5%;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--laranja-fonte);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--laranja-fonte);
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--verde-principal);
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    color: var(--verde-principal);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--laranja-fonte);
+}
+
+.img__rede {
+    width: 25%;
+    padding: 0 1rem;
+}
+
+.rodape {
+    width: 100%;
+    background-color: var(--verde-principal);
+    color: var(--laranja-fonte);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.1rem;
+}
+
+.revendas {
+    padding: 2% 5% 4% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: justify;
+    gap: 1rem;
+}
+
+.revendas__conteudo__titulo {
+    padding-top: 1.5rem;
+    color: var(--laranja-fonte);
+}
+
+.apresentacao__mapa {
+    width: 95%;
+    height: 50%;
+}
+
+
+
+hr {
+    height: 1px;
+    width: 100%;
+}
+
+@media screen and (min-width: 610px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 3rem;
+        text-align: center;
+        color: var(--laranja-fonte);
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 2rem;
+    }
+
+    .img__rede {
+        width: 20%;
+        padding: 0 1rem;
+    }
+
+    .revendas {
+        padding: 2% 5% 4% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: justify;
+        gap: 1.5rem;
+    }
+
+    .apresentacao__links__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--verde-principal);
+        width: 80%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        color: var(--verde-principal);
+    }
+    
+    .apresentacao__mapa {
+        width: 550px;
+        height: 160px;
+    }
+
+}
+
+@media screen and (min-width: 840px) {
+    .apresentacao__conteudo__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+        color: var(--laranja-fonte);
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 2.5rem;
+    }
+
+    .apresentacao__links__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--verde-principal);
+        width: 80%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        color: var(--verde-principal);
+    }
+
+    .revendas {
+        padding: 2% 5% 4% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: justify;
+        gap: 1rem;
+    }
+
+    .img__rede {
+        width: 15%;
+        padding: 0 1rem;
+    }
+    
+    .apresentacao__mapa {
+        width: 700px;
+        height: 240px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(./img/Back\ Desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 3.5rem;
+        text-align: center;
+        color: var(--laranja-fonte);
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 2.5rem;
+    }
+
+    .apresentacao__links__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--verde-principal);
+        width: 80%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        color: var(--verde-principal);
+    }
+
+    .revendas {
+        padding: 2% 5% 4% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: justify;
+        gap: 1rem;
+    }
+
+    .apresentacao__mapa {
+        width: 800px;
+        height: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .apresentacao__conteudo {
+        padding: 3% 5%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 3.5rem;
+        padding: 2%;
+        text-align: center;
+        color: var(--laranja-fonte);
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 3rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 3rem;
+    }
+
+    .apresentacao__links__navegacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--verde-principal);
+        width: 30%;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 1rem 1rem;
+        color: var(--verde-principal);
+    }
+
+    .revendas {
+        padding: 2% 5% 4% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: justify;
+        gap: 1rem;
+    }
+
+    .img__rede {
+        width: 15%;
+    }
+
+    .apresentacao__mapa {
+        width: 1600px;
+        height: 700px;
+    }
+}
